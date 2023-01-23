@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                    <nav class="nav">
+                        <div class="logo">
+                            <a href="#" class="a-logo">КроссМ</a>
+                        </div>
+                        <div class="options">
+                            <a href="#" class="options-link">Каталог</a>
+                            <a href="#" class="options-link">Что такое КМ?</a>
+                            <a href="#" class="options-link">Мои предложения</a>
+                            <div class="user-photo">
+                            <img class="user-photo__img" src="../images/Dima.jpg">
+                            </div>
+                        </div> 
+                    </nav>
+            </div>
+        </header>
+
+        <section class="registration_form">
+            <div class="container">
+                <h2 class="main-title">
+                    Создание компании
+                </h2>
+                <hr class="solid-hr">
+                <form action="">
+                    <div class="inputs">
+                        <div class="inputs-part i12">
+                            <h3 class="caption">Название компании</h3>
+                            <div class="input-div">
+                                <input class="input input-620px " type="text" maxlength="100" placeholder="Введите название компании" required>
+                            </div>
+                            <p class="comment">Напишите, как называется Ваша компания. Пользователям будет удобно, 
+                            <br>если Вы укажете тип Вашего юридического лица в начале
+                            
+                        </div>        
+                        <div class="inputs-part i12">
+                            <h3 class="caption">Ниша</h3>
+                            <div class="input-div">
+                                <select class="js-choice">
+                                    <option value="" selected>Выберите нишу</option>
+                                    <option value="1">Кафе</option>
+                                    <option value="2">Финтес клуб</option>
+                                    <option value="3">Пиццерия</option>
+                                    <option value="4">Реклама</option>
+                                    <option value="5">Салон красоты</option>
+                                    <option value="6">Шаурмичная</option>
+                                    <option value="7">Бургерная</option>
+                                    <option value="8">Кальянная</option>
+                                    <option value="9">Суши-бар</option>
+                                    <option value="10">Интернет-магазин</option>
+                                    <option value="11">Рыбалка</option>
+                                    <option value="12">Пчеловодство</option>
+                                    <option value="13">Медицина</option>
+                                    <option value="14">Маркетинг</option>
+                                </select>
+                            </div>
+                            <div class="bottom-16px"></div>
+                            <p class="comment">Выберите нишу Вашей компании. Если в списке нет того, что Вам 
+                            <br>нужно, выберите наиболее подходящую   
+                        </div>      
+                    </div>
+                    <div class="line">
+                        <hr class="dashed-border dashed-border-620">
+                        <hr class="dashed-border dashed-border-620">
+                    </div>
+                    
+                    <div class="inputs">
+                        <div class="inputs-part i12">
+                            <div class="i12-flex">
+                            <div class="flex-left">
+                            <h3 class="caption">Страна</h3>
+                            <div class="input-div">
+                                <select class="js-choice">
+                                    <option value="" selected>Введите страну</option>
+                                    <option value="1">Беларусь</option>
+                                    <option value="2">Франция</option>
+                                    <option value="3">Испания</option>
+                                    <option value="4">Португалия</option>
+                                    <option value="5">Россия</option>
+                                    <option value="6">США</option>
+                                    <option value="7">Китай</option>
+                                    <option value="8">Италия</option>
+                                    <option value="9">Германия</option>
+                                </select>
+                            </div>
+                            <div class="bottom-16px"></div>
+                            <p class="comment">Выберите страну, в которой 
+                                <br>зарегистрирована Ваша компания
+                            </div>   
+                            <div class="inputs-part ip340">
+                                <h3 class="caption">Ваша должность</h3>
+                                <div class="input-div">
+                                    <input class="input input-340px" type="password" maxlength="100" placeholder="Введите должность" required>
+                                </div>
+                                <p class="comment">Укажите Вашу должность в компании.
+                                    <br>Позже это можно редактировать
+                            </div>
+                        </div>
+                        </div>     
+                        <div class="inputs-part i12">
+                            <h3 class="caption">Ссылка на сайт</h3>
+                            <div class="input-div">
+                                <input class="input input-400px" type="password" maxlength="100" placeholder="Введите ссылку на сайт" required>
+                            </div>
+                            <p class="comment">Оставьте здесь ссылку на сайт 
+                                <br>или на социальную сеть
+                        </div>  
+                    </div>
+                    <div class="line line-bottom">
+                    <div class="left-hr">
+                        <hr class="dashed-border dashed-border-260">
+                        <hr class="dashed-border dashed-border-340-2">
+                    </div>
+                        <hr class="dashed-border dashed-border-620">
+                    </div>
+                    <div class="button-submit">
+                        <button class="button" type="submit">
+                            <p class="button-p">Зарегистрироваться</p>
+                        </button>
+                        <a href="#" class="a-account">
+                            уже есть аккаунт ?
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- <div class="bottom-margin"></div> -->
+        <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+        <script src="../js/main.js"></script>
+    </body>
+
+</html>
