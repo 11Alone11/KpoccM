@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                    <nav class="nav">
+                        <div class="nav-logo">
+                            <a href="#" class="nav-log__title">КроссМ</a>
+                        </div>
+                        <div class="menu">
+                            <a href="#" class="nav-menu__title">Каталог</a>
+                            <a href="#" class="nav-menu__title">Что такое КМ?</a>
+                            <a href="#" class="nav-menu__title">Мои предложения</a>
+                            <div class="nav-menu__user">
+                            <!-- <img class="nav-menu__user__img" src="../images/Dima.jpg"> -->
+                            </div>
+                        </div> 
+                    </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h2 class="main-title">
+                    Создание предложения
+                </h2>
+                <hr class="solid-hr">
+                <form action="">
+                    <div class="inputs">
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Услуга</h3>
+                            <div class="inputs-part__div">
+                                <input class="input input-620px " type="text" maxlength="100" placeholder="Введите название услуги" required>
+                            </div>
+                            <p class="input__comment">Напишите название услуги.
+                            <br>Максимальное количество символов — 
+                            
+                        </div>        
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Количество купонов</h3>
+                            <div class="inputs-part__div">
+                                <input class="input input-620px " type="text" maxlength="100" placeholder="Выберите количество купонов" required>
+                            </div>
+                            <p class="input__comment">Напишите желаемое количество купонов для реализации. 
+                            <br>Точное число или, например ОТ ... или ОТ ... ДО ...
+                            
+                        </div>      
+                        
+                    </div>
+                    <div class="line">
+                        <hr class="line__dashed line__dashed-620">
+                        <hr class="line__dashed line__dashed-620">
+                    </div>
+                    
+                    <div class="inputs">
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Розничная цена</h3>
+                            <div class="inputs-part__div">
+                                <input class="input input-620px " type="text" maxlength="100" placeholder="Введите розничную цену" required>
+                            </div>
+                            <p class="input__comment">Здесь укажите цену услуги при розничной продаже
+                            
+                        </div>        
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Цена купона</h3>
+                            <div class="inputs-part__div">
+                                <input class="input input-620px " type="text" maxlength="100" placeholder="Введите цену купона" required>
+                            </div>
+                            <p class="input__comment">Здесь укажите цену 1 купона
+                            
+                        </div>      
+                        
+                    </div>
+                    <div class="line">
+                        <hr class="line__dashed line__dashed-620">
+                        <hr class="line__dashed line__dashed-620">
+                    </div>
+
+                    <div class="inputs">
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Фото купонов</h3>
+                            <div class="inputs-part__div">
+                                <div class="file-form" method="post">
+                                    <div class="choose-file-container input-620px-single">
+                                        <label class="choose-file-button" id="test">
+                                            <input name="file" class="file-input" type="file" id="choose-file-container" accept="image/jpeg,image/png,image/gif">
+                                            <span class="button-file">Выбрать файлы</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-16px"></div>
+                            <p class="input__comment">Пишитие, пожалуйста с 9 до 20 в вайбер на номер телфона     
+                        </div>                          
+                    </div>
+                    <div class="line">
+                        <hr class="line__dashed line__dashed-620-single">
+                    </div>
+                    <div class="button-submit">
+                        <button class="button" type="submit">
+                            <p class="button-p">Зарегистрироваться</p>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- <div class="bottom-margin"></div> -->
+        <script src="../js/file-animation.js"></script>
+    </body>
+
+</html>

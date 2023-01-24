@@ -15,36 +15,36 @@
         <header class="header">
             <div class="header-container">
                     <nav class="nav">
-                        <div class="logo">
-                            <a href="#" class="a-logo">КроссМ</a>
+                        <div class="nav-logo">
+                            <a href="#" class="nav-log__title">КроссМ</a>
                         </div>
-                        <div class="options">
-                            <a href="#" class="options-link">Каталог</a>
-                            <a href="#" class="options-link">Что такое КМ?</a>
-                            <a href="#" class="options-link">Мои предложения</a>
-                            <div class="user-photo">
-                            <img class="user-photo__img" src="../images/Dima.jpg">
+                        <div class="menu">
+                            <a href="#" class="nav-menu__title">Каталог</a>
+                            <a href="#" class="nav-menu__title">Что такое КМ?</a>
+                            <a href="#" class="nav-menu__title">Мои предложения</a>
+                            <div class="nav-menu__user">
+                            <img class="nav-menu__user__img" src="../images/Dima.jpg">
                             </div>
                         </div> 
                     </nav>
             </div>
         </header>
 
-        <section class="registration_form">
+        <main>
             <div class="container">
                 <h2 class="main-title">
                     Заполнение информации
                 </h2>
-                <hr class="solid-hr">
+                <hr class="hr-solid">
                 <form action="">
                     <div class="inputs">
-                        <div class="inputs-part i12">
-                            <h3 class="caption">Номер телефона</h3>
-                            <div class="input-div-flex">
-                                <div class="phone-input-left">
+                        <div class="inputs-part inputs-part__double">
+                            <h3 class="inputs-part__title">Номер телефона</h3>
+                            <div class="inputs-part__div-flex">
+                                <div class="phone-input__left">
                                 <input class="input input-367px" type="text" maxlength="100" placeholder="Введите телефон" required>
                             </div>
-                                <div class="phone-input-right">
+                                <div class="phone-input__right">
                                     <label class="label">
                                         <input class="check-box" type="checkbox">
                                         <span class="check-style"></span>
@@ -52,11 +52,11 @@
                                     </label>
                                 </div>      
                             </div>
-                            <p class="comment">Номер телефона будет отображаться 
+                            <p class="input__comment">Номер телефона будет отображаться 
                             <br>в профиле и в карточке компании</p>
-                            <hr class="dashed-border dashed-border-620">
-                            <h3 class="caption">Ваш город</h3>
-                            <div class="input-div">
+                            <hr class="line__dashed line__dashed-620">
+                            <h3 class="inputs-part__title">Ваш город</h3>
+                            <div class="inputs-part__div">
                                 <select class="js-choice">
                                     <option value="" selected>Введите город</option>
                                     <option value="1">Минск</option>
@@ -74,27 +74,26 @@
                                     <option value="13">Рим</option>
                                     <option value="14">Стокгольм</option>
                                 </select>
-                                <!-- <input class="input input-620px" type="text" maxlength="100" placeholder="Введите город" required> -->
                             </div>
                             <div class="bottom-16px"></div>
-                            <p class="comment">Если в списке нет Вашего города, 
+                            <p class="input__comment">Если в списке нет Вашего города, 
                             <br>выберите ближайший областной центр</p>
                         </div>        
-                        <div class="inputs-part i12">
+                        <div class="inputs-part inputs-part__double">
                             <div class="book-attributes">
-                                <p class="caption">Комментарий в профиль (необязательно)</p>
+                                <p class="inputs-part__title">Комментарий в профиль (необязательно)</p>
                                 <div class="add-book-description">
                                     <textarea class="input-textarea" wrap="soft" type="text" maxlength="500" placeholder="Введите описание"></textarea>
                                 </div>
-                                <p class="comment">Здесь Вы можете написать предпочтительное время для связи. Можете так же указать удобный мессенджер или написать что-то полезное или смешное :)</p>
+                                <p class="input__comment">Здесь Вы можете написать предпочтительное время для связи. Можете так же указать удобный мессенджер или написать что-то полезное или смешное :)</p>
                             </div>
                         </div>      
                     </div>
-                    <div class="line line-bottom-12px">
-                        <hr class="dashed-border dashed-border-620">
-                        <hr class="dashed-border dashed-border-620">
+                    <div class="line line__bottom-12px">
+                        <hr class="line__dashed line__dashed-620">
+                        <hr class="line__dashed line__dashed-620">
                     </div>
-                    <div class="phone-input-right margin-bottom-40px">
+                    <div class="phone-input__right margin-bottom-40px">
                         <label class="label">
                             <input class="check-box" type="checkbox" required>
                             <span class="check-style"></span>
@@ -111,7 +110,7 @@
                     </div>   
                 </form>
             </div>     
-        </section>
+        </main>
         <!-- <div class="bottom-margin"></div> -->
         <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
         <script src="../js/main.js"></script>

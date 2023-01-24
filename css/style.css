@@ -27,7 +27,7 @@ body{
 
 .header-container{
     max-width: 1380px;
-    padding: 0px 60px;
+    padding: 0px 50px;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -35,12 +35,12 @@ body{
 .container{
     max-width: 1380px;
     margin: 0 auto;
-    padding: 40px 60px 50px 60px;
+    padding: 40px 50px 50px 50px;
     border-radius: 50px;
     background-color: #FCFCFC;
 }
 
-.options{
+.menu{
     height: 40px;
     display: flex;
     gap: 70px;
@@ -51,13 +51,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     height: 160px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 
-.user-photo{
+.nav-menu__user{
     /* display: block; */
+    min-width: 42px;
     position: relative;
     transition: 0.3s ease-out;
     margin: 2px;
@@ -70,11 +71,11 @@ body{
     /* box-shadow: 0px 0px 0px 2px #0500FF; */
 }
 
-.user-photo:hover{
+.nav-menu__user:hover{
     box-shadow: 0px 0px 0px 2px #0500FF;
 }
 
-.user-photo__img{
+.nav-menu__user__img{
     position: absolute;
     /* margin: 0px 0px 0px 0px; */
     top: 50%;
@@ -86,7 +87,7 @@ body{
     object-fit: cover;
 }
 
-.a-logo{
+.nav-log__title{
     transition: 0.3s ease-out;
     font-weight: 900;
     font-size: 24px;
@@ -94,17 +95,17 @@ body{
     color: #000000;
 }
 
-.a-logo:hover{
+.nav-log__title:hover{
     text-shadow: 0px 0px 3px #0500FF;
 }
 
-.options-link{
+.nav-menu__title{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     transition: 0.3s ease-out;
 }
-.options-link:hover{
+.nav-menu__title:hover{
     text-shadow: 0px 0px 3px #0500FF;
 }
 
@@ -115,7 +116,7 @@ body{
     line-height: 24px;
 }
 
-.caption{
+.inputs-part__title{
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -164,11 +165,11 @@ body{
     margin-right: 8px;
 }
 
-.phone-input-left{
+.phone-input__left{
     margin-right: 20px;
 }
 
-.phone-input-right{
+.phone-input__right{
     display: flex;
     align-items: center;
 }
@@ -179,37 +180,37 @@ body{
     line-height: 15px;
 }
 
-.i12{
+.inputs-part__double{
     width: 100%;
     flex-grow: 1;
 }
 
-.ip1{
+.inputs-part__left{
     width: 38.33%;
     max-width: 460px;
 }
 
-.ip2{
+.inputs-part__center{
     width: 28.33%;
     max-width: 340px;
 }
 
-.ip3{
+.inputs-part__right{
     width: 33.33%;
     max-width: 400px;
 }
 
-.ip260{
+.inputs-part__center60{
     width: 43.333%;
     max-width: 260px;
 }
 
-.ip340{
+.inputs-part__right40{
     width: 56.666%;
     max-width: 340px;
 }
 
-.flex-left{
+.inputs-part__260px{
     width: 43.333%;
     max-width: 260px;
 }
@@ -225,15 +226,15 @@ body{
     gap: 40px;
 }
 
-.line-bottom{
+.line__bottom{
     margin-bottom: 20px;
 }
 
-.line-bottom-12px{
+.line__bottom-12px{
     margin-bottom: 12px;
 }
 
-.comment{
+.input__comment{
     font-weight: 300;
     font-size: 12px;
     line-height: 15px;
@@ -241,46 +242,56 @@ body{
     margin-bottom: 20px;
 }
 
-.input-div-flex{
+.inputs-part__div-flex{
     display: flex;
     height: 52px;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.dashed-border {
+.line__dashed {
     margin-bottom: 20px;
     border-top: 3px dashed rgba(0, 0, 0, 0.1);
 }
 
-.dashed-border-620{
+.line__dashed-620{
      width: 100%;
+     border-top: 3px dashed rgba(0, 0, 0, 0.1);
 }
 
-.dashed-border-460 {
+.line__dashed-620-single{
+    width: calc(50% - 20px);
+    max-width: 620px; 
+}
+
+.input-620px-single{
+    width: calc(50% - 20px);
+}
+
+.line__dashed-460 {
     border-top: 3px dashed rgba(0, 0, 0, 0.1);
     max-width: 460px;
     flex-grow: 38.33;
 }
 
-.dashed-border-340 {
+.line__dashed-340 {
     border-top: 3px dashed rgba(0, 0, 0, 0.1);
     max-width: 340px;
     flex-grow: 28.33;
 }
 
-.dashed-border-400 {
+.line__dashed-400 {
     border-top: 3px dashed rgba(0, 0, 0, 0.1);
     max-width: 400px;
     flex-grow: 33.33;
 }
 
-.dashed-border-260{
+.line__dashed-260{
     width: 43.333%;
     max-width: 260px;
 }
 
-.dashed-border-340-2{
+.line__dashed-340-2{
     width: 56.666%;
     max-width: 340px;
 }
@@ -291,7 +302,7 @@ body{
     width: 100%;
 }
 
-.solid-hr{
+.hr-solid{
     border-top: 4px solid rgba(0, 0, 0, 0.1);
     border-radius: 2px; 
     margin-bottom: 32px;
@@ -415,7 +426,7 @@ button:hover{
     margin-bottom: 16px;
 }
 
-.i12-flex{
+.inputs-part__double-flex{
     display: flex;
     gap: 20px;
 }
@@ -423,7 +434,6 @@ button:hover{
 .choices{
     max-width: 620px;
 }
-
 
 .choices[data-type*=select-one]:after{
     transition: 0.3s ease-out;
@@ -544,3 +554,90 @@ button:hover{
     border: 2px solid #000000;
 }
 
+.main-message{
+    text-align: center;
+    width: 690px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0px auto 36px auto;
+}
+
+.form-center{
+    margin-top: 50px;
+}
+
+.button-choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.file-form {
+    position: relative;
+    width: 100%;
+}
+
+.choose-file-container {
+    max-width: 620px;
+    background-color: #FCFCFC;
+    height: 52px;
+    border-radius: 18px;  
+    border: 2px solid #000000;
+}
+
+.choose-file-button:hover {
+    background-color:  rgba(5, 0, 255, 0.4);
+    width: 240px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    transition: 0.3s ease-out;
+    /* box-shadow: 0 0px 0px 1.6px #000000; */
+}
+
+
+.choose-file-button {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-50%); */
+    margin-top: -2px;
+    margin-left: -1.8px;
+    display: -webkit-box;
+    background-color: #000000;
+    width: 240px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    /* box-shadow: 0px 0px 0px 1.6px #000000; */
+}
+
+.button-file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.file-input[type=file] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.label-file {
+    position: absolute;
+    width: 100%;
+}
