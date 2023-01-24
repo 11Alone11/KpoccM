@@ -3,7 +3,7 @@ const renderSelect = () =>{
     elements.forEach(el =>{
         const choices = new Choices(el, {
             itemSelectText : "",
-            noResultsText: 'Такого города нет',
+            noResultsText: 'Не найдено',
         })
     })
 }
