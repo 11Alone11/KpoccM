@@ -1,60 +1,55 @@
 const allCopmanies = document.querySelectorAll('.company')
 let allCompainesName = []
-allCopmanies.forEach((element) => {console.log(element.innerHTML)})
-allCopmanies.forEach((element) => {allCompainesName.push(element.innerHTML)})
-let newAllCompaniesName = allCompainesName.map((element) => "— " + element  )
-allCopmanies.forEach((el, index) => {
-    el.innerHTML = newAllCompaniesName[index]
+let currentCompanyTitle
+let isCompanyActive = false
+
+allCopmanies.forEach((e) => {
+    allCompainesName.push(e.innerHTML)
 })
 
-let currentCompany;
-let isCompanyActive = false
-let currentCompanyTitle
+const dashAllCompaniesName = allCompainesName.map((e) => "—&nbsp" + e)
+allCopmanies.forEach((el, index) => {
+    el.innerHTML = dashAllCompaniesName[index]
+})
 
-const allCopmaniesClick = allCopmanies.forEach((element) => {
-
-    element.addEventListener('click',() => {
+const allCopmaniesClick = allCopmanies.forEach((el) => {
+    el.addEventListener('click', () => {
+        document.querySelector('.pop-up').style.opacity = '0'
+        document.querySelector('.pop-up').style.visibility = 'hidden'
+        document.querySelector('.add-offer').style.color = '#000000'
 
         allCopmanies.forEach((el) => {
             el.classList.remove('company-active')
         })
 
-        currentCompany = element;
-        currentCompany.classList.toggle("company-active")
-        currentCompanyTitle = currentCompany.innerHTML.slice(2)
+        el.classList.toggle("company-active")
+        currentCompanyTitle = el.innerHTML.slice(7)
         isCompanyActive = true
-
         let allCompanyCardTitle = document.querySelectorAll('.company-card-name')
-        allCompanyCardTitle.forEach((element) => {
-            if(element.innerHTML === currentCompanyTitle) {
-                console.log(1)
-                document.querySelectorAll('.company-card .company-card-top .company-card-name').forEach((el) => {
-                    if (el.innerHTML === currentCompanyTitle)
-                    console.log(el.innerHTML)
-                    document.querySelectorAll(`.card${currentCompanyTitle.slice(-1)}`).forEach(element => {
-                        console.log()
-                        if (element.innerHTML != currentCompanyTitle.slice(-1))
-                        element.style.display = 'none'
-                    });
-                })
+
+        allCompanyCardTitle.forEach((el) => {
+            el.closest('.company-card').style.display = 'block'
+
+            if (el.innerHTML != currentCompanyTitle) {
+                el.closest('.company-card').style.display = 'none'
             }
         })
     })
 })
 
-const button = document.querySelector('.add-offer')
-
-const click = button.addEventListener('click', (element) => {
-
-    if(isCompanyActive){
-
-       console.log("clicked") 
-
-    }
-    else {
-        document.querySelector('.pop-up').style.display = 'block'
-    }
+document.addEventListener('click', (e) => {
     
-})
+    if (!isCompanyActive) {
+    const targetElement = e.target
 
-// allCopmanies[0].style.color = '#0500FF';
+        if (targetElement.classList.contains('add-offer') || targetElement.classList.contains('pop-up') || targetElement.classList.contains('pop-up-arrow') || targetElement.classList.contains('p-pop-up')) {
+        document.querySelector('.pop-up').style.opacity = '1'
+        document.querySelector('.pop-up').style.visibility = 'visible'
+        }
+
+        else {
+        document.querySelector('.pop-up').style.opacity = '0'
+        document.querySelector('.pop-up').style.visibility = 'hidden'
+        }
+    }
+})
