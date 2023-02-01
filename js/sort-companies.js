@@ -45,11 +45,13 @@ document.addEventListener('click', (e) => {
         if (targetElement.classList.contains('add-offer') || targetElement.classList.contains('pop-up') || targetElement.classList.contains('pop-up-arrow') || targetElement.classList.contains('p-pop-up')) {
         document.querySelector('.pop-up').style.opacity = '1'
         document.querySelector('.pop-up').style.visibility = 'visible'
+        document.querySelector('.add-offer').style.borderBottom = '3px solid transparent'
         }
 
         else {
         document.querySelector('.pop-up').style.opacity = '0'
         document.querySelector('.pop-up').style.visibility = 'hidden'
+        document.querySelector('.add-offer').style.borderBottom = '3px solid #0500FF'
         }
     }
 })
