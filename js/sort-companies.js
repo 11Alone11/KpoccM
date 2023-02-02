@@ -2,6 +2,7 @@ const allCopmanies = document.querySelectorAll('.company')
 let allCompainesName = []
 let currentCompanyTitle
 let isCompanyActive = false
+let masonry
 
 allCopmanies.forEach((e) => {
     allCompainesName.push(e.innerHTML)
@@ -13,6 +14,7 @@ allCopmanies.forEach((el, index) => {
 })
 
 const allCopmaniesClick = allCopmanies.forEach((el) => {
+
     el.addEventListener('click', () => {
         document.querySelector('.pop-up').style.opacity = '0'
         document.querySelector('.pop-up').style.visibility = 'hidden'
@@ -34,10 +36,22 @@ const allCopmaniesClick = allCopmanies.forEach((el) => {
                 el.closest('.company-card').style.display = 'none'
             }
         })
+        
     })
+    
+
 })
 
 document.addEventListener('click', (e) => {
+
+        masonry = new Masonry('.grid', {
+        gutter: '.gutter-sizer',
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        transitionDuration: '0.2s', 
+      });
+    
     
     if (!isCompanyActive) {
     const targetElement = e.target
@@ -55,3 +69,15 @@ document.addEventListener('click', (e) => {
         }
     }
 })
+
+window.onload = () => {
+  // const grid = document.querySelector('.grid')
+
+    masonry = new Masonry('.grid', {
+    gutter: '.gutter-sizer',
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    transitionDuration: '0.2s', 
+  });
+};
