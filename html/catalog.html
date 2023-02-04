@@ -12,6 +12,7 @@
         <title>Document</title>
     </head>
     <body>
+        <div class="Test"></div>
         <header class="header">
             <div class="header-container">
                     <nav class="nav">
@@ -55,9 +56,9 @@
                     <div style="margin-bottom: 16px;" class="filters-choices">
                         <select class="js-choice">
                             <option value="" selected>Все</option>
-                            <option value="1">Беларусь</option>
-                            <option value="2">Франция</option>
-                            <option value="3">Испания</option> 
+                            <option value="1">Реклама</option>
+                            <option value="2">Маркетинг</option>
+                            <option value="3">Кафе</option> 
                         </select>
                     </div>
                     
@@ -66,11 +67,11 @@
                     <div style="gap: 12px;" class="flex">
                         <div class="flex">
                             <p class="ot">От</p>
-                            <input class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            <input id="coupon-count-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
                         </div>
                         <div class="flex">
                             <p class="ot">До</p>
-                            <input class="input filters-input" type="number" maxlength="100" placeholder="0" required>
+                            <input id="coupon-count-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
                         </div>
                     </div>
                     <hr class="line__dashed-filters">
@@ -78,9 +79,9 @@
                     <div style="margin-bottom: 16px;" class="filters-choices">
                         <select class="js-choice">
                             <option value="" selected>Все</option>
-                            <option value="1">Беларусь</option>
-                            <option value="2">Франция</option>
-                            <option value="3">Испания</option> 
+                            <option value="1">RUB</option>
+                            <option value="2">BYN</option>
+                            <option value="3">USD</option> 
                         </select>
                     </div>  
                     <hr class="line__dashed-filters">
@@ -88,11 +89,11 @@
                     <div style="gap: 12px;" class="flex">
                         <div class="flex">
                             <p class="ot">От</p>
-                            <input class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            <input id="retail-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
                         </div>
                         <div class="flex">
                             <p class="ot">До</p>
-                            <input class="input filters-input" type="number" maxlength="100" placeholder="0" required>
+                            <input id="retail-price-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
                         </div>
                     </div>
                     <hr class="line__dashed-filters">
@@ -100,18 +101,18 @@
                     <div style="gap: 12px;" class="flex">
                         <div class="flex">
                             <p class="ot">От</p>
-                            <input class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            <input id="coupon-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
                         </div>
                         <div class="flex">
                             <p class="ot">До</p>
-                            <input class="input filters-input" type="number" maxlength="100" placeholder="0" required>
+                            <input id="coupon-price-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
                         </div>
                     </div>
                     <hr class="line__dashed-filters">
                     <p class="filter-subtitle" style="margin-bottom: 9px;">Страна</p>
                     <div style="margin-bottom: 16px;" class="filters-choices">
                         <select class="js-choice">
-                            <option value="" selected>Все</option>
+                            <option value="" selected>asdf</option>
                             <option value="1">Беларусь</option>
                             <option value="2">Франция</option>
                             <option value="3">Испания</option> 
@@ -119,19 +120,19 @@
                     </div> 
                     <hr style="margin-bottom: 20px;" class="line__dashed-filters">
                     <div class="phone-input__right" style="margin-bottom: 16px;">
-                        <label class="label-filters">
-                            <input class="check-box" type="checkbox">
+                        <label style="cursor: pointer;" class="label-filters">
+                            <input id="phone" class="check-box" type="checkbox">
                             <!-- <span class="check-style-filters"></span> -->
                             <span class="check-style"></span>
                             <span class="filter-subtitle">Указан номер телефона</span>
                         </label>
                     </div> 
                     <hr style="margin-bottom: 24px;" class="line__dashed-filters">
-                    <div class="button-submit">
-                        <button class="button" type="submit">
+                    
+                        <button id="sort-button" class="button">
                             <p class="button-p">Показать результаты</p>
                         </button>
-                    </div>   
+                    
                 </div>
             </div>
 
@@ -179,16 +180,16 @@
                     <div class="company-card grid-item">
                         <div class="company-card-top">
                             <div class="company-card-logo"></div>
-                            <p class="company-card-name">Компания 25</p>
+                            <p class="company-card-name">Test1</p>
                         </div>
                         <hr class="card-hr-solid">
                         <div class="company-card-main"> 
                             <div class="company-content-left">
                                 <div class="">
                                     <p class="company-key">Ниша</p>
-                                    <p class="company-value">Консалтин и садоводстве</p>
+                                    <p class="company-value nisha">Кафе</p>
                                     <p class="company-key">Услуга</p>
-                                    <p class="company-value no-bottom">Стриж </p>
+                                    <p class="company-value usluga no-bottom">Стрижка</p>
                                 
                                 </div>
                             </div>
@@ -196,12 +197,12 @@
                             <div class="company-content-right">
                                 <div class="flex-content-no-gap">
                                     <div class="">
-                                    <p class="company-key">Количество купонов</p>
-                                    <p class="company-value">От 100 до 250</p>
+                                        <p class="company-key">Количество купонов</p>
+                                        <p class="company-value coupon-count">От 100 до 250</p>
                                     </div>
                                     <div class="">
-                                    <p class="company-key">Розничная цена</p>
-                                    <p class="company-value no-bottom">10 BYN</p>
+                                        <p class="company-key">Розничная цена</p>
+                                        <p class="company-value no-bottom retail-price">10 BYN</p>
                                     </div>    
                                 </div>
                             </div> 
@@ -213,7 +214,7 @@
                             <div class="company-content-left">
                                 <div class=>
                                     <p class="company-key">Цена купона</p>
-                                    <p class="company-value no-bottom">2 BYN</p>
+                                    <p class="company-value no-bottom coupon-price">2 BYN</p>
                                 
                                 </div>
                             </div>
@@ -262,19 +263,21 @@
                         </div>
                     </div>
 
+                    
+
                     <div class="company-card grid-item">
                         <div class="company-card-top">
                             <div class="company-card-logo"></div>
-                            <p class="company-card-name">Компания 1</p>
+                            <p class="company-card-name">Test2</p>
                         </div>
                         <hr class="card-hr-solid">
                         <div class="company-card-main"> 
                             <div class="company-content-left">
                                 <div class="">
                                     <p class="company-key">Ниша</p>
-                                    <p class="company-value">Консалтин и садоводстве</p>
+                                    <p class="company-value nisha">Маркетинг</p>
                                     <p class="company-key">Услуга</p>
-                                    <p class="company-value no-bottom">Стрижка </p>
+                                    <p class="company-value usluga no-bottom">Стрижка</p>
                                 
                                 </div>
                             </div>
@@ -282,12 +285,12 @@
                             <div class="company-content-right">
                                 <div class="flex-content-no-gap">
                                     <div class="">
-                                    <p class="company-key">Количество купонов</p>
-                                    <p class="company-value">От 100 до 250</p>
+                                        <p class="company-key">Количество купонов</p>
+                                        <p class="company-value coupon-count">От 10 до 250</p>
                                     </div>
                                     <div class="">
-                                    <p class="company-key">Розничная цена</p>
-                                    <p class="company-value no-bottom">10 BYN</p>
+                                        <p class="company-key">Розничная цена</p>
+                                        <p class="company-value no-bottom retail-price">5000 RUB</p>
                                     </div>    
                                 </div>
                             </div> 
@@ -299,7 +302,7 @@
                             <div class="company-content-left">
                                 <div class=>
                                     <p class="company-key">Цена купона</p>
-                                    <p class="company-value no-bottom">2 BYN</p>
+                                    <p class="company-value no-bottom coupon-price">300 RUB</p>
                                 
                                 </div>
                             </div>
@@ -322,7 +325,7 @@
                                     <p class="contacts">Контакты</p>
                                     <div class="contacts-flex">
                                         <p class="contacts-mail">dekholoduniya.yaha@gmail.com</p>
-                                        <p class="contacts-phone">+375 29 888 88 88</p>
+                                        <p class="contacts-phone"></p>
                                     </div>
                                 
                                 </div>
@@ -348,19 +351,22 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="company-card grid-item">
                         <div class="company-card-top">
                             <div class="company-card-logo"></div>
-                            <p class="company-card-name">Компания 1</p>
+                            <p class="company-card-name">Test3</p>
                         </div>
                         <hr class="card-hr-solid">
                         <div class="company-card-main"> 
                             <div class="company-content-left">
                                 <div class="">
                                     <p class="company-key">Ниша</p>
-                                    <p class="company-value">Консалтинг и садоводстве</p>
+                                    <p class="company-value nisha">Реклама</p>
                                     <p class="company-key">Услуга</p>
-                                    <p class="company-value no-bottom">Стрижка </p>
+                                    <p class="company-value usluga no-bottom">Что</p>
                                 
                                 </div>
                             </div>
@@ -368,12 +374,12 @@
                             <div class="company-content-right">
                                 <div class="flex-content-no-gap">
                                     <div class="">
-                                    <p class="company-key">Количество купонов</p>
-                                    <p class="company-value">От 100 до 250</p>
+                                        <p class="company-key">Количество купонов</p>
+                                        <p class="company-value coupon-count">От 1 до 20</p>
                                     </div>
                                     <div class="">
-                                    <p class="company-key">Розничная цена</p>
-                                    <p class="company-value no-bottom">10 BYN</p>
+                                        <p class="company-key">Розничная цена</p>
+                                        <p class="company-value no-bottom retail-price">100 USD</p>
                                     </div>    
                                 </div>
                             </div> 
@@ -385,7 +391,7 @@
                             <div class="company-content-left">
                                 <div class=>
                                     <p class="company-key">Цена купона</p>
-                                    <p class="company-value no-bottom">2 BYN</p>
+                                    <p class="company-value no-bottom coupon-price">5 USD</p>
                                 
                                 </div>
                             </div>
@@ -481,31 +487,20 @@
         
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
         
-        <script src="../js/masonry.js"></script>
-        <script src="../js/main.js"></script>
+        <script src="../js/catalog.js"></script>
         <script>
-
         document.querySelectorAll('.check-pop-up').forEach((el) => {
-        
-        el.addEventListener('click', () => {
-        // document.body.style.overflow = 'hidden';
-        document.querySelector('.pop-up-images-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[0].children[1].innerHTML
-        document.querySelector('.pop-up-input-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[2].children[0].children[0].children[3].innerHTML
-        document.querySelector('.pop-up-input-price').innerHTML = el.parentNode.parentNode.parentNode.children[0].children[0].children[1].innerHTML
-        document.querySelector('.pop-up-images').classList.toggle('pop-up-delete-active');
-        cardId = el.id
-        })
-})  
+            el.addEventListener('click', () => {
+                document.querySelector('.pop-up-images-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[0].children[1].innerHTML
+                document.querySelector('.pop-up-input-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[2].children[0].children[0].children[3].innerHTML
+                document.querySelector('.pop-up-input-price').innerHTML = el.parentNode.parentNode.parentNode.children[0].children[0].children[1].innerHTML
+                document.querySelector('.pop-up-images').classList.toggle('pop-up-delete-active');
+            })
+        })  
 
-document.querySelector('.pop-up-exit').addEventListener('click', () => {
-    document.querySelector('.pop-up-images').classList.remove('pop-up-delete-active');
-    // document.body.style.overflow = 'auto'
-})  
-
-// document.querySelector('.pop-up-button-confirm').addEventListener('click', () => {
-//     document.querySelector('.pop-up-images').classList.remove('pop-up-delete-active');            
-// })
-
+        document.querySelector('.pop-up-exit').addEventListener('click', () => {
+            document.querySelector('.pop-up-images').classList.remove('pop-up-delete-active');
+        })  
         </script>
     </body>
 

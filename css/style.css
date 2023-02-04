@@ -1884,3 +1884,16 @@ p.ot {
     font-size: 12px;
     line-height: 15px;
 }
+
+.Test {
+    transition: 0.2s ease-out;
+    z-index: 50;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
