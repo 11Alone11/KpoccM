@@ -26,11 +26,13 @@ const allCopmaniesClick = allCopmanies.forEach((el) => {
 
         el.classList.toggle("company-active")
         currentCompanyTitle = el.innerHTML.slice(7)
+        document.querySelector('.add-offer').href = `companies/create-company/${el.id}`;
         isCompanyActive = true
         let allCompanyCardTitle = document.querySelectorAll('.company-card-name')
 
         allCompanyCardTitle.forEach((el) => {
             el.closest('.company-card').style.display = 'block'
+            
 
             if (el.innerHTML != currentCompanyTitle) {
                 el.closest('.company-card').style.display = 'none'
@@ -71,8 +73,6 @@ document.addEventListener('click', (e) => {
 })
 
 window.onload = () => {
-  // const grid = document.querySelector('.grid')
-
     masonry = new Masonry('.grid', {
     gutter: '.gutter-sizer',
     itemSelector: '.grid-item',
