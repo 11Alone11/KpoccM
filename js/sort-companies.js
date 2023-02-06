@@ -19,6 +19,7 @@ const allCopmaniesClick = allCopmanies.forEach((el) => {
         document.querySelector('.pop-up').style.opacity = '0'
         document.querySelector('.pop-up').style.visibility = 'hidden'
         document.querySelector('.add-offer').style.color = '#000000'
+        document.querySelector('.add-offer').style.borderBottom = '3px solid #0500FF'
 
         allCopmanies.forEach((el) => {
             el.classList.remove('company-active')
@@ -67,7 +68,7 @@ document.addEventListener('click', (e) => {
         else {
         document.querySelector('.pop-up').style.opacity = '0'
         document.querySelector('.pop-up').style.visibility = 'hidden'
-        document.querySelector('.add-offer').style.borderBottom = '3px solid #0500FF'
+        document.querySelector('.add-offer').style.borderBottom = '3px solid #807EFD'
         }
     }
 })

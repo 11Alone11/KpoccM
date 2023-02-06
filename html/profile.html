@@ -1,442 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-container">
-                    <nav class="nav">
-                        <div class="nav-logo">
-                            <a href="#" class="nav-log__title">КроссМ</a>
-                        </div>
-                        <div class="menu">
-                            <a href="#" class="nav-menu__title">Каталог</a>
-                            <a href="#" class="nav-menu__title">Что такое КМ?</a>
-                            <a href="#" class="nav-menu__title">Мои предложения</a>
-                            <div class="nav-menu__user">
-                            <img class="nav-menu__user__img" src="../images/Dima.jpg">
-                            </div>
-                        </div> 
-                    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="#" class="nav-log__title">КроссМ</a>
+          </div>
+          <div class="menu">
+            <a href="#" class="nav-menu__title">Каталог</a>
+            <a href="#" class="nav-menu__title">Что такое КМ?</a>
+            <a href="#" class="nav-menu__title">Мои предложения</a>
+            <div class="nav-menu__user">
+              <img class="nav-menu__user__img" src="../images/Dima.jpg" />
             </div>
-        </header>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-        <main class="main">
-            <div class="container-padding">
-            <div class="container-main">
-                <div class="profile">
-                    <div class="profile-user">
-                        
-                        <div class="profile-user-left">
-                            <div class="profile-user__logo">
-                                <img class="profile-user__img" src="../images/Dima.jpg">
-                                <a href="#" class="delete-photo">Удалить фото</a>
-                            </div>
-                        </div>
-                        <div class="profile-user-right">
-                            <h1 class="profile-user__name">Станислав Брониславович</h1>
-                            <div class="city-info">
-                                <span class="profile-user__city">Город:&nbsp</span>
-                                <span class="profile-user__city__name">Минск</span>
-                            </div>
-                            <div class="profile-user__buttons">
-                                <div class="button-240px">
-                                    <button class="button" type="submit">
-                                        <p class="button-p">Редактировать профиль</p>
-                                    </button> 
-                                </div>
-                                <div class="button-240px">
-                                    <button class="button" type="submit">
-                                        <p class="button-p">Настройки</p>
-                                    </button> 
-                                </div>
-                            </div>
-                        </div>
+    <main class="main">
+      <div class="container-padding">
+        <div class="container-main">
+          <div class="profile">
+            <div class="profile-user">
+              <div class="profile-user-left">
+                <div class="profile-user__logo">
+                  <img class="profile-user__img" src="../images/Dima.jpg" />
+                  <a href="#" class="delete-photo">Удалить фото</a>
+                </div>
+              </div>
+              <div class="profile-user-right">
+                <h1 class="profile-user__name">Станислав Брониславович</h1>
+                <div class="city-info">
+                  <span class="profile-user__city">Город:&nbsp</span>
+                  <span class="profile-user__city__name">Минск</span>
+                </div>
+                <div class="profile-user__buttons">
+                  <div class="button-240px">
+                    <button class="button" type="submit">
+                      <p class="button-p">Редактировать профиль</p>
+                    </button>
+                  </div>
+                  <div class="button-240px">
+                    <button class="button" type="submit">
+                      <p class="button-p">Настройки</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profile-contacts">
+              <h2 class="profile-contacts__title">Контакты</h2>
+              <div class="profile-user__mail">
+                <p class="user__mail">
+                  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@gmail.com
+                </p>
+              </div>
+              <div class="profile-user__phone">
+                <p class="user__phone">+375 29 786 16 54</p>
+                <div class="user__phone__logo"></div>
+              </div>
+            </div>
+          </div>
+
+          <section>
+            <div class="pop-up-delete">
+              <div class="pop-up-container">
+                <div class="pop-up-body">
+                  <p class="pop-up-title">
+                    Вы уверены, что хотите удалить компанию
+                    БелсельмашстройГомелель?
+                  </p>
+                  <div class="pop-up-buttons">
+                    <div class="pop-up-button">
+                      <button class="button">
+                        <p class="button-p">Отменить</p>
+                      </button>
                     </div>
-                    <div class="profile-contacts">
-                        <h2 class="profile-contacts__title">Контакты</h2>
-                        <div class="profile-user__mail">
-                            <p class="user__mail">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@gmail.com</p>
-                        </div>
-                        <div class="profile-user__phone">
-                            <p class="user__phone">+375 29 786 16 54</p>
-                            <div class="user__phone__logo"></div>
-                        </div>
+                    <div class="pop-up-button">
+                      <button class="button">
+                        <p class="button-p">Удалить</p>
+                      </button>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <h2 class="profile-content-title">Компании</h2>
+
+              <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo">
+                      <img class="card__img" src="../images/Dima.jpg" />
+                    </div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name">Красота</span>
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
                 </div>
 
-                <section>
-
-
-
-                    <div class="pop-up-delete">
-                        <div class="pop-up-container">
-                            <div class="pop-up-body">
-                                <p class="pop-up-title">Вы уверены, что хотите удалить компанию БелсельмашстройГомелель?
-
-                                </p>
-                                <div class="pop-up-buttons">
-                                    <div class="pop-up-button">
-                                        <button class="button">
-                                            <p class="button-p">Отменить</p>
-                                        </button> 
-                                    </div>
-                                    <div class="pop-up-button">
-                                        <button class="button">
-                                            <p class="button-p">Удалить</p>
-                                        </button> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name">Красота</span>
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
                     </div>
-                    
-                    <div class="card-container">
-                        <h2 class="profile-content-title">
-                            Компании
-                        </h2>
-                       
-
-                            <div class="grid">
-                                <div class="grid-sizer"></div>
-                                <div class="gutter-sizer"></div>
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo">
-                                    <img class="card__img" src="../images/Dima.jpg">
-                                </div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМasdfasdfasdf”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “В asdf saАГОНСЕЛЬМ”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота asd fasdfas df asdf sdf asdf asdf asdf asdf asdf</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМ asd”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красот  asdf asd fasdf asа</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМ asdf sa as asd d”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота asd sdsd</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="card grid-item">
-                            <div class="card-info">
-                                <div class="card__logo"></div>                             
-                                <div class="card__info">
-                                    <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
-                                    <div class="company-title">
-                                        <span class="company-sphere">Ниша:&nbsp</span>
-                                        <span class="company-sphere-name">Красота</span>
-                                    </div>
-                                    <div class="company-title company-title-12px">
-                                        <span class="company-position">Должность в компании:&nbsp</span>
-                                        <span class="company-position-name">Директор по закупкам</span>
-                                    </div>
-                                    <a href="#" style="margin-bottom: 28px;" class="company-link">https://www.onliner.by/</a>
-                                </div>
-                                <div class="card-reviews">
-                                    <span class="reviews-count">Отзывы(7)</span>
-                                    <div class="rating-mini">
-                                        <span class="active"></span>	
-                                        <span class="active"></span>    
-                                        <span class="active"></span>  
-                                        <span class="not-active"></span>    
-                                        <span class="not-active"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-user__buttons profile-user__buttons__gap-12px">
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Редактировать профиль</p>
-                                </button> 
-                            </div>
-                            <div class="button-278px">
-                                <button class="button button-long" type="submit">
-                                    <p class="button-p">Настройки</p>
-                                </button> 
-                            </div>
-                            </div>
-                        </div>
-
-                        
-                           
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
                     </div>
-                    
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
                     </div>
-                </section>
-                
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “ВАГОНСЕЛЬМasdfasdfasdf”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name">Красота</span>
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “В asdf saАГОНСЕЛЬМ”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name"
+                          >Красота asd fasdfas df asdf sdf asdf asdf asdf asdf
+                          asdf</span
+                        >
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “ВАГОНСЕЛЬМ asd”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name"
+                          >Красот asdf asd fasdf asа</span
+                        >
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">
+                        ООО “ВАГОНСЕЛЬМ asdf sa as asd d”
+                      </h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name"
+                          >Красота asd sdsd</span
+                        >
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card grid-item">
+                  <div class="card-info">
+                    <div class="card__logo"></div>
+                    <div class="card__info">
+                      <h3 class="company-name">ООО “ВАГОНСЕЛЬМ”</h3>
+                      <div class="company-title">
+                        <span class="company-sphere">Ниша:&nbsp</span>
+                        <span class="company-sphere-name">Красота</span>
+                      </div>
+                      <div class="company-title company-title-12px">
+                        <span class="company-position"
+                          >Должность в компании:&nbsp</span
+                        >
+                        <span class="company-position-name"
+                          >Директор по закупкам</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        style="margin-bottom: 28px"
+                        class="company-link"
+                        >https://www.onliner.by/</a
+                      >
+                    </div>
+                    <div class="card-reviews">
+                      <span class="reviews-count">Отзывы(7)</span>
+                      <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="not-active"></span>
+                        <span class="not-active"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="profile-user__buttons profile-user__buttons__gap-12px"
+                  >
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Редактировать профиль</p>
+                      </button>
+                    </div>
+                    <div class="button-278px">
+                      <button class="button button-long" type="submit">
+                        <p class="button-p">Настройки</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
         </div>
-        </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <hr class="hr-solid mg-bottom-48px">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <a href="#" class="nav-log__title">КроссМ</a>
-                    </div>
-                    <div class="footer-arrow">
-                        <div class="test-arrow">
-                            <hr class="hr-solid-arrow">
-                        </div>
-                        
-                    </div>
-                    <div class="footer-nav">
-                    <div class="footer-top-titles">
-                        <span class="nav-menu__title">Каталог</span>
-                        <span class="nav-menu__title">Что&nbspтакое&nbspКМ?</span>
-                        <span class="nav-menu__title">Мои&nbspпредложения</span>
-                    </div>
-                        
-                    </div>
-                </div>
-                <p class="nav-menu__title policy">Политика конфиденциальности</p>
-                <div class="footer-contacts">
-                    <p class="prava">Все права защищены @2023</p>
-                    <p class="developer">Сайт разработан командой Старрук инк :)</p>
-                </div> 
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <hr class="hr-solid mg-bottom-48px" />
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="#" class="nav-log__title">КроссМ</a>
+          </div>
+          <div class="footer-arrow">
+            <div class="test-arrow">
+              <hr class="hr-solid-arrow" />
             </div>
-        </footer>
-        <!-- <div class="bottom-margin"></div> -->
-        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-        <script src="../js/masonry.js"></script>
-    </body>
-
+          </div>
+          <div class="footer-nav">
+            <div class="footer-top-titles">
+              <span class="nav-menu__title">Каталог</span>
+              <span class="nav-menu__title">Что&nbspтакое&nbspКМ?</span>
+              <span class="nav-menu__title">Мои&nbspпредложения</span>
+            </div>
+          </div>
+        </div>
+        <p class="nav-menu__title policy">Политика конфиденциальности</p>
+        <div class="footer-contacts">
+          <p class="prava">Все права защищены @2023</p>
+          <p class="developer">Сайт разработан командой Старрук инк :)</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="bottom-margin"></div> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="../js/masonry.js"></script>
+  </body>
 </html>

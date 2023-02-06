@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/test.css">
         <title>Document</title>
     </head>
     <body>
@@ -36,7 +36,9 @@
             
             
             <div class="container-padding">
+                
                 <div class="search">
+                    
                 <div class="footer-arrow">
                     <div class="test-arrow">
                         <hr class="hr-solid-arrow">
@@ -48,129 +50,141 @@
                 </div>
                 </div>
             <div class="flex catalog-filters-container">
-            <div class="filters-container">
-                <div class="filters">
-                    <p class="filters-title">Фильтры</p>
-                    <hr class="hr-solid" style="margin-bottom: 20px;">
-                    <p class="filter-subtitle" style="margin-bottom: 12px;">Ниша</p>
-                    <div style="margin-bottom: 16px;" class="filters-choices">
-                        <select class="js-choice">
-                            <option value="" selected>Все</option>
-                            <option value="1">Реклама</option>
-                            <option value="2">Маркетинг</option>
-                            <option value="3">Кафе</option> 
-                        </select>
-                    </div>
+            
+                <div class="exit-test"></div>
+                <div class="filters-container">
                     
-                    <hr class="line__dashed-filters">
-                    <p class="filter-subtitle" style="margin-bottom: 9px;">Количество купонов</p>
-                    <div style="gap: 12px;" class="flex">
-                        <div class="flex">
-                            <p class="ot">От</p>
-                            <input id="coupon-count-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
-                        </div>
-                        <div class="flex">
-                            <p class="ot">До</p>
-                            <input id="coupon-count-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
-                        </div>
-                    </div>
-                    <hr class="line__dashed-filters">
-                    <p class="filter-subtitle" style="margin-bottom: 9px;">Валюта</p>
-                    <div style="margin-bottom: 16px;" class="filters-choices">
-                        <select class="js-choice">
-                            <option value="" selected>Все</option>
-                            <option value="1">RUB</option>
-                            <option value="2">BYN</option>
-                            <option value="3">USD</option> 
-                        </select>
-                    </div>  
-                    <hr class="line__dashed-filters">
-                    <p class="filter-subtitle" style="margin-bottom: 9px;">Розничная цена</p>
-                    <div style="gap: 12px;" class="flex">
-                        <div class="flex">
-                            <p class="ot">От</p>
-                            <input id="retail-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
-                        </div>
-                        <div class="flex">
-                            <p class="ot">До</p>
-                            <input id="retail-price-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
-                        </div>
-                    </div>
-                    <hr class="line__dashed-filters">
-                    <p class="filter-subtitle" style="margin-bottom: 9px;">Цена купона</p>
-                    <div style="gap: 12px;" class="flex">
-                        <div class="flex">
-                            <p class="ot">От</p>
-                            <input id="coupon-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
-                        </div>
-                        <div class="flex">
-                            <p class="ot">До</p>
-                            <input id="coupon-price-do" class="input filters-input" type="number" maxlength="100" placeholder="100" required>
-                        </div>
-                    </div>
-                    <hr class="line__dashed-filters">
-                    <p class="filter-subtitle" style="margin-bottom: 9px;">Страна</p>
-                    <div style="margin-bottom: 16px;" class="filters-choices">
-                        <select class="js-choice">
-                            <option value="" selected>asdf</option>
-                            <option value="1">Беларусь</option>
-                            <option value="2">Франция</option>
-                            <option value="3">Испания</option> 
-                        </select>
-                    </div> 
-                    <hr style="margin-bottom: 20px;" class="line__dashed-filters">
-                    <div class="phone-input__right" style="margin-bottom: 16px;">
-                        <label style="cursor: pointer;" class="label-filters">
-                            <input id="phone" class="check-box" type="checkbox">
-                            <!-- <span class="check-style-filters"></span> -->
-                            <span class="check-style"></span>
-                            <span class="filter-subtitle">Указан номер телефона</span>
-                        </label>
-                    </div> 
-                    <hr style="margin-bottom: 24px;" class="line__dashed-filters">
                     
-                        <button id="sort-button" class="button">
-                            <p class="button-p">Показать результаты</p>
-                        </button>
-                    
-                </div>
-            </div>
-
-
-            <div class="pop-up-images">
-                <div class="pop-up-container">
-                    <div class="pop-up-images-body">
-                        <div class="pop-up-exit">
-
+                    <div class="filters">
+                        <p class="filters-title">Фильтры</p>
+                        <hr class="hr-solid" style="margin-bottom: 20px;">
+                        <p class="filter-subtitle" style="margin-bottom: 12px;">Ниша</p>
+                        <div style="margin-bottom: 16px;" class="filters-choices">
+                            <select class="js-choice">
+                                <option value="" selected>Все</option>
+                                <option value="1">Реклама</option>
+                                <option value="2">Маркетинг</option>
+                                <option value="3">Кафе</option> 
+                            </select>
                         </div>
-                        <div style="margin-bottom: 32px; margin-right: 52px;" class="flex">
-                        <p class="pop-up-images-title">Компания 1</p>
-                        <div style="margin-right: 16px; margin-top: -2px;" class="">
-                            <span class="profile-user__city">Услуга:&nbsp</span>
-                            <span class="profile-user__city__name pop-up-input-title">Салон красоты</span>
+                        
+                        <hr class="line__dashed-filters">
+                        <p class="filter-subtitle" style="margin-bottom: 9px;">Количество купонов</p>
+                        <div style="gap: 12px;" class="flex">
+                            <div class="flex">
+                                <p class="ot">От</p>
+                                <input id="coupon-count-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            </div>
+                            <div class="flex">
+                                <p class="ot">До</p>
+                                <input id="coupon-count-do" class="input filters-input" type="number" maxlength="100" placeholder="10000" required>
+                            </div>
                         </div>
-                        <div style="margin-top: -2px;" class="">
-                            <span class="profile-user__city">Цена купона:&nbsp</span>
-                            <span class="profile-user__city__name pop-up-input-price">10</span>
+                        <hr class="line__dashed-filters">
+                        <p class="filter-subtitle" style="margin-bottom: 9px;">Валюта</p>
+                        <div style="margin-bottom: 16px;" class="filters-choices">
+                            <select class="js-choice">
+                                <option value="" selected>Все</option>
+                                <option value="1">RUB</option>
+                                <option value="2">BYN</option>
+                                <option value="3">USD</option> 
+                            </select>
+                        </div>  
+                        <hr class="line__dashed-filters">
+                        <p class="filter-subtitle" style="margin-bottom: 9px;">Розничная цена</p>
+                        <div style="gap: 12px;" class="flex">
+                            <div class="flex">
+                                <p class="ot">От</p>
+                                <input id="retail-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            </div>
+                            <div class="flex">
+                                <p class="ot">До</p>
+                                <input id="retail-price-do" class="input filters-input" type="number" maxlength="100" placeholder="10000" required>
+                            </div>
                         </div>
+                        <hr class="line__dashed-filters">
+                        <p class="filter-subtitle" style="margin-bottom: 9px;">Цена купона</p>
+                        <div style="gap: 12px;" class="flex">
+                            <div class="flex">
+                                <p class="ot">От</p>
+                                <input id="coupon-price-ot" class="input filters-input" type="text" maxlength="100" placeholder="0" required>
+                            </div>
+                            <div class="flex">
+                                <p class="ot">До</p>
+                                <input id="coupon-price-do" class="input filters-input" type="number" maxlength="100" placeholder="10000" required>
+                            </div>
                         </div>
-                        <div class="images-container">
-                            <img src="../images/panda.jpg" alt="" class="pop-up-img">
-                            <img src="../images/android.jpg" alt="" class="pop-up-img">
-                            <img src="../images/cat.jpg" alt="" class="pop-up-img">
-                            <img src="../images/Dima.jpg" alt="" class="pop-up-img">
-                            <img src="../images/wolf.jpg" alt="" class="pop-up-img">
-                            <div style="margin-top: 32px" class=""></div>
-                        </div>
+                        <hr class="line__dashed-filters">
+                        <p class="filter-subtitle" style="margin-bottom: 9px;">Страна</p>
+                        <div style="margin-bottom: 16px;" class="filters-choices">
+                            <select class="js-choice">
+                                <option value="" selected>asdf</option>
+                                <option value="1">Беларусь</option>
+                                <option value="2">Франция</option>
+                                <option value="3">Испания</option> 
+                            </select>
+                        </div> 
+                        <hr style="margin-bottom: 20px;" class="line__dashed-filters">
+                        <div class="phone-input__right" style="margin-bottom: 16px;">
+                            <label style="cursor: pointer;" class="label-filters">
+                                <input id="phone" class="check-box" type="checkbox">
+                                <!-- <span class="check-style-filters"></span> -->
+                                <span class="check-style"></span>
+                                <span class="filter-subtitle">Указан номер телефона</span>
+                            </label>
+                        </div> 
+                        <hr style="margin-bottom: 24px;" class="line__dashed-filters">
+                        
+                            <button id="sort-button" class="button">
+                                <p class="button-p">Показать результаты</p>
+                            </button>
+                        
                     </div>
                 </div>
-            </div>
+
+
+                <div class="pop-up-images">
+                    <div class="pop-up-container">
+                        <div class="pop-up-images-body">
+                            <div class="pop-up-exit">
+    
+                            </div>
+                            <div style="margin-bottom: 32px;" class="flex">
+                            <p class="pop-up-images-title">Компания 1</p>
+                            <div style="margin-right: 16px;" class="">
+                                <span class="profile-user__city">Услуга:&nbsp</span>
+                                <span class="profile-user__city__name pop-up-input-title">Салон красоты</span>
+                            </div>
+                            <div class="">
+                                <span class="profile-user__city">Цена купона:&nbsp</span>
+                                <span class="profile-user__city__name pop-up-input-price">10</span>
+                            </div>
+                            </div>
+                            <div class="images-container">
+                                <img src="../images/cat.jpg" alt="" class="pop-up-img">
+                                <img src="../images/android.jpg" alt="" class="pop-up-img">
+                                <img src="../images/cat.jpg" alt="" class="pop-up-img">
+                                <img src="../images/Dima.jpg" alt="" class="pop-up-img">
+                                <img src="../images/wolf.jpg" alt="" class="pop-up-img">
+                                <!-- <div style="margin-top: 32px" class=""></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             
             <div class="card-container">
+                <div class="flex">
                 <h2 class="main-title">
                     Предложения
                 </h2>
+                <button class="test-filter">
+                    Фильтры
+                </button>
+                <h2 style="margin-left: 40px;" class="main-title message-error">
+             
+                </h2>
+                </div>
 
                 <div class="grid">
                     <div class="grid-sizer"></div>
@@ -277,7 +291,7 @@
                                     <p class="company-key">Ниша</p>
                                     <p class="company-value nisha">Маркетинг</p>
                                     <p class="company-key">Услуга</p>
-                                    <p class="company-value usluga no-bottom">Стрижка</p>
+                                    <p class="company-value usluga no-bottom">говно</p>
                                 
                                 </div>
                             </div>
@@ -489,17 +503,63 @@
         
         <script src="../js/catalog.js"></script>
         <script>
+            
+        document.querySelector('.test-filter').addEventListener('click', () => {  
+            if (document.querySelector('.filters-container').style.visibility === 'visible') {
+            document.querySelector('.test-filter').style.visibility = 'visible';
+            document.querySelector('.test-filter').style.opacity = 1;
+
+            document.querySelector('.filters-container').style.transform = 'translateX(-320px)';
+            document.querySelector('.filters-container').style.visibility = 'hidden';
+            document.querySelector('.filters-container').style.opacity = 0;
+            document.querySelector('.exit-test').style.visibility = 'hidden';
+            document.querySelector('.exit-test').style.opacity = 0;
+            document.querySelector('.exit-test').style.transform = 'translateX(-320px)';
+            
+ 
+            } else {
+                document.querySelector('.test-filter').style.visibility = 'hidden';
+            document.querySelector('.test-filter').style.opacity = 0;
+            document.querySelector('.exit-test').style.transform = 'translateX(0px)';
+            document.querySelector('.filters-container').style.transform = 'translateX(0px)';
+            document.querySelector('.filters-container').style.visibility = 'visible';
+            document.querySelector('.filters-container').style.opacity = 1;
+            document.querySelector('.exit-test').style.visibility = 'visible';
+            document.querySelector('.exit-test').style.opacity = 1; 
+            }
+
+            
+
+        })
+
+        document.querySelector('.exit-test').addEventListener('click', () => { 
+            document.querySelector('.test-filter').style.visibility = 'visible';
+            document.querySelector('.test-filter').style.opacity = 1;
+
+        document.querySelector('.filters-container').style.transform = 'translateX(-320px)';
+           document.querySelector('.filters-container').style.visibility = 'hidden';
+           document.querySelector('.filters-container').style.opacity = 0;
+           document.querySelector('.exit-test').style.visibility = 'hidden';
+           document.querySelector('.exit-test').style.opacity = 0;
+           document.querySelector('.exit-test').style.transform = 'translateX(-320px)';
+
+       })
+
+        
+
         document.querySelectorAll('.check-pop-up').forEach((el) => {
             el.addEventListener('click', () => {
                 document.querySelector('.pop-up-images-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[0].children[1].innerHTML
                 document.querySelector('.pop-up-input-title').innerHTML = el.parentNode.parentNode.parentNode.parentNode.children[2].children[0].children[0].children[3].innerHTML
                 document.querySelector('.pop-up-input-price').innerHTML = el.parentNode.parentNode.parentNode.children[0].children[0].children[1].innerHTML
                 document.querySelector('.pop-up-images').classList.toggle('pop-up-delete-active');
+                // document.querySelector('body').style.overflow = 'hidden'
             })
         })  
 
         document.querySelector('.pop-up-exit').addEventListener('click', () => {
             document.querySelector('.pop-up-images').classList.remove('pop-up-delete-active');
+            // document.querySelector('body').style.overflow = 'auto'
         })  
         </script>
     </body>
